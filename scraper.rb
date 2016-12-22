@@ -5,5 +5,3 @@ require 'wikidata/fetcher'
 
 names = EveryPolitician::Wikidata.morph_wikinames(source: 'tmtmtmtm/northern_cyprus_parliament_wikipedia', column: 'wikiname')
 EveryPolitician::Wikidata.scrape_wikidata(names: { en: names })
-warn EveryPolitician::Wikidata.notify_rebuilder
-
